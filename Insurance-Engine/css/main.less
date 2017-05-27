@@ -1,0 +1,259 @@
+
+// 引入bootstrap.less
+@import "bootstrap.less";
+
+
+
+//定制样式
+body a:hover{
+  text-decoration: none;
+}
+
+@media (min-width: 991px) {
+  body{
+    font-size: 18px;
+  }
+}
+.margin-top{
+  margin-top: 40px;
+}
+.margin-bottom{
+  margin-bottom: 40px;
+}
+.spance-bottom{
+  margin-bottom: 30px;
+}
+.navbar-brand{
+  background: url("../img/insurance-engine-logo-sm-light.png") no-repeat;
+  width: 170px;
+  height: 50px;
+  margin-left: 15px!important;
+  margin-top: 10px;
+}
+
+@media (min-width: 991px) {
+  .navbar-brand{
+    background: url("../img/insurance-engine-logo-md.png") no-repeat;
+    width: 300px;
+    height: 88px;
+    margin-top: 25px;
+  }
+}
+.jumbg{
+  background: url("../img/automated-insurance-marketing.jpg");
+  background-size: cover;
+  height: 800px;
+}
+.jumbotron{
+  padding: 45px;
+}
+@media (min-width: 991px) {
+  .jumbotron{
+    padding-top: 65px;
+    padding-bottom: 65px;
+    height: 800px;
+    .circle>span{
+      color: #fff;
+      font-size: 20px;
+      &:hover{
+        color: #2a6496;
+      }
+    }
+    .little-circle:hover,
+    .little-circle:focus{
+      border: 3px solid #2a6496;
+    }
+  }
+  .jumbotron p{
+    font-size: 21px;
+    color: #1c1c1c;
+  }
+}
+
+@media (max-width: 990px) {
+  .jumbotron{
+    max-height: 480px;
+  }
+}
+.jumbotron h1{
+  margin-top: 0;
+  font-size: 28px;
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+@media (min-width: 991px){
+  .jumbotron h1{
+    margin-top: 55px;
+    font-size: 46px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1200px){
+  .jumbotron h1{
+    margin-top: 66px;
+    font-size: 50px;
+  }
+}
+.navbar{
+  position: absolute;
+  @media (min-width: 991px){
+    .collapse .nav>li>a{
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 10px!important;
+      padding-bottom: 10px!important;
+      &:hover,&:focus{
+        color: #095b91;
+      }
+    }
+    .collapse .nav>li{
+      margin-bottom: 45px;
+      margin-top: 45px;
+    }
+    .collapse .nav{
+      margin-right: 0;
+    }
+    .collapse .nav>li.request-demo{
+      background: #f06320;
+      border-radius: 5px;
+      margin-left: 20px;
+      margin-right: 20px;
+      &:hover{
+        background: #cf4c0e;
+        >a{
+          color: #fff;
+        }
+      }
+    }
+    .collapse .nav .open .dropdown-menu{
+      border-radius: 4px;
+      border: none;
+      padding: 15px;
+      left: 0;
+      right: auto;
+      >li>a{
+        color: #428bca;
+        padding: 3px 20px;
+        line-height: 1.42857;
+        font-size: 16px;
+      }
+
+      &:after{
+        position: absolute;
+        content: "";
+        border-bottom: 9px solid #fff;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        top: -9px;
+        left: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 990px) {
+  .navbar-collapse{
+    box-shadow: none;
+    background: #f2f5f7;
+    .navbar-nav{
+      margin: 27.5px -15px;
+       li a{
+        text-align: center;
+      }
+    }
+    .navbar-nav .open .dropdown-menu>li>a{
+      font-size: 18px;
+      &:hover,
+      &:focus{
+        color: #042c47;
+      }
+    }
+    .navbar-nav .request-demo{
+      background: #f06320;
+      border-radius: 5px;
+      margin: 15px auto;
+      width: 94%;
+      max-width: 94%;
+      &:hover,
+      &:focus{
+        background: #cf4c0e;
+      }
+    }
+  }
+}
+
+.well{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.container-fluid{
+  padding: 0 15px;
+}
+.circle{
+  border-radius: 100%;
+  text-align: center;
+}
+.little-circle{
+  padding: 12px;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #fff;
+}
+.position-circle{
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  margin-right: -25px;
+}
+.Ptmyle{
+  background: #F2F5F7;
+}
+.pty-out{
+  margin: 1.5em 0;
+}
+.ftfm{
+  font-weight: none;
+}
+
+.big-circle{
+  width: 100px;
+  height: 100px;
+  border: 6px solid #fff;
+  background: #095b91;
+  padding: 7px;
+}
+.big-circle .h2>span{
+  color: #fff;
+}
+.reverse-margin{
+  margin-bottom: -50px;
+}
+.footco{
+  background: #1c1c1c;
+  p,span{
+    color: #fff;
+  }
+  a{
+    color: #bebcbc;
+    &:hover,
+    &:focus{
+      color: #f7f7f7;
+    }
+  }
+}
+.contentinfo{
+  background: #1c1c1c;
+  p,span{
+    color: #fff;
+  }
+}
+
+@media (max-width: 990px) {
+  .no-pad{
+    padding: 0;
+  }
+}
